@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    background-image: url('https://i.pinimg.com/originals/17/a3/2a/17a32a48018d0bb800a6415ba5ee19b4.png');
+    background-size: cover;
+}
+
+img {
+    width: 300px;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fly 5s ease-in;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        transform: translate(-50%, -100vh);
+    }
+}

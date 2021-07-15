@@ -1,0 +1,30 @@
+div {
+    width: 300px;
+    height: 300px;
+    margin: 48px;
+    border: 1px solid black;
+
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+     /* To stay in the last state of the animation
+     animation-fill-mode: forwards;  */
+}
+
+div:hover{
+    animation-play-state: paused;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: lightblue;
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        background-color: lightcoral;
+        transform: rotateZ(180deg);
+    }
+}
